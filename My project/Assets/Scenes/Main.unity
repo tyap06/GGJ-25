@@ -3337,6 +3337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2063466556}
+  - component: {fileID: 2063466557}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -3362,6 +3363,33 @@ Transform:
   - {fileID: 1366600568}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2063466557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063466555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e83c1075ddfc164fb2667e3ed7c8b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 0}
+  SFXSource: {fileID: 0}
+  bubblePop: {fileID: 8300000, guid: 0639f93847aeecf479f52941d64242f3, type: 3}
+  gameOver: {fileID: 8300000, guid: bc46a09ce1603f841b526ec1d626e52e, type: 3}
+  mouseClick2: {fileID: 8300000, guid: 779be00caa672c74485055592759d683, type: 3}
+  mouseClick3: {fileID: 8300000, guid: 0a3869993be928c40acfddbab27df4b1, type: 3}
+  mouseHover1: {fileID: 8300000, guid: f9ff23533acfb9e47a4fbde1a873907e, type: 3}
+  mouseHover2: {fileID: 8300000, guid: d3eaa69e9f8b3674196592b84952ab62, type: 3}
+  mouseHover3: {fileID: 8300000, guid: fefb9f7a43134b241b3402592a24b2f8, type: 3}
+  pianoDrumBass: {fileID: 8300000, guid: 3a557b01420a648418c81d43c02c3635, type: 3}
+  snoring2: {fileID: 8300000, guid: ea5882bce13d195488dc520c98ae4616, type: 3}
+  throw1: {fileID: 8300000, guid: 4f9e1a4b66c9322448db0f5fd5ad9a53, type: 3}
+  throw2: {fileID: 8300000, guid: 84fcc9de21dc8494e9f3835b8ac62aca, type: 3}
+  throwReload1: {fileID: 8300000, guid: 653e0eb7c70a02343b3e79aa7922b125, type: 3}
+  toolSwap1: {fileID: 8300000, guid: f10d7d9e82e74d74fa55f95ff2ba39df, type: 3}
 --- !u!1001 &2112365409
 PrefabInstance:
   m_ObjectHideFlags: 0
