@@ -7,7 +7,7 @@ public class Bubble_Spawner : MonoBehaviour
     [SerializeField]
     private List<GameObject> bubbleReference;
 
-    private GameObject spawnedBubble;
+    public GameObject spawnedBubble;
 
     public GameObject bubble1;
 
@@ -65,7 +65,7 @@ public class Bubble_Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AddBubbleReference();
+        //AddBubbleReference();
         
     }
 

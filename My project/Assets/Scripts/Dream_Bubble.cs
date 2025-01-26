@@ -49,7 +49,7 @@ public class Dream_Bubble : MonoBehaviour
         //myBody.linearVelocity = new Vector2(speed, myBody.linearVelocity.y);
         //is_popped(tool1);
         SelectObject();
-        destroySelectedObject();
+        //destroySelectedObject();
         StartCoroutine(BubbleFloatUp());
         
 
@@ -69,8 +69,11 @@ public class Dream_Bubble : MonoBehaviour
     {
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hitData = Physics2D.Raycast(new Vector2(worldPosition.x, worldPosition.y), Vector2.zero, 0);
-        if (hitData && Input.GetMouseButtonDown(0) && hitData.transform.CompareTag("Bubble clone"))
-        {
+        //if (hitData && Input.GetMouseButtonDown(0) && hitData.transform.CompareTag("Bubble clone"))
+            if (hitData && Input.GetMouseButtonDown(0))
+            {
+            Destroy(hitData.collider.gameObject);
+
             selectedObject = hitData.transform.gameObject;
             Debug.Log("Hit Object 2D!");
             //Destroy(selectedObject);
