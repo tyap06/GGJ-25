@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Dream_Bubble
+public class Dream_Bubble : MonoBehaviour
 {
     public int Bubble_type;
     public bool is_popped;
