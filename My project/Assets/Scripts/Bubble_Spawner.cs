@@ -12,7 +12,10 @@ public class Bubble_Spawner : MonoBehaviour
     public GameObject bubble1;
 
     [SerializeField]
-    private Transform pos1, pos2;
+    private Transform pos1, pos2, pos3, pos4;
+
+    public float minSpeed;
+    public float maxSpeed;
 
     private int randomIndex;
     private int randomPos;
@@ -29,7 +32,7 @@ public class Bubble_Spawner : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(1, 5));
 
             randomIndex = Random.Range(0, bubbleReference.Count);
-            randomPos = Random.Range(0, 2);
+            randomPos = Random.Range(0, 4);
 
             spawnedBubble = Instantiate(bubbleReference[randomIndex]); // creates copy of game object
             spawnedBubble.tag = "Bubble clone";
@@ -38,15 +41,28 @@ public class Bubble_Spawner : MonoBehaviour
             if (randomPos == 0)
             {
                 spawnedBubble.transform.position = pos1.position;
-                spawnedBubble.GetComponent<Dream_Bubble>().speed = Random.Range(4, 10);
+                spawnedBubble.GetComponent<Dream_Bubble>().speed = Random.Range(minSpeed, maxSpeed);
 
             }
-            else
+            else if (randomPos == 1)
             {
                 //pos 2
                 spawnedBubble.transform.position = pos2.position;
-                spawnedBubble.GetComponent<Dream_Bubble>().speed = Random.Range(4, 10);
+                spawnedBubble.GetComponent<Dream_Bubble>().speed = Random.Range(minSpeed, maxSpeed);
             }
+            else if (randomPos == 2)
+            {
+                //pos 3
+                spawnedBubble.transform.position = pos3.position;
+                spawnedBubble.GetComponent<Dream_Bubble>().speed = Random.Range(minSpeed, maxSpeed);
+            }
+            else if (randomPos == 3)
+            {
+                //pos 4
+                spawnedBubble.transform.position = pos4.position;
+                spawnedBubble.GetComponent<Dream_Bubble>().speed = Random.Range(minSpeed, maxSpeed);
+            }
+
         } // while loop
     }
 
