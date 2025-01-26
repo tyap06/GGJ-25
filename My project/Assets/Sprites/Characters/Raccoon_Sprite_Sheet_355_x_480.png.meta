@@ -321,7 +321,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raccoon_Sprite_Sleep
+      name: Raccoon_Sprite_Sleep2
       rect:
         serializedVersion: 2
         x: 355
@@ -452,8 +452,8 @@ TextureImporter:
       Raccoon_Sprite_Idle6: 1863222535
       Raccoon_Sprite_Idle7: -1638010808
       Raccoon_Sprite_Idle8: 2008396563
-      Raccoon_Sprite_Sleep: -2075324660
       Raccoon_Sprite_Sleep1: 932925630
+      Raccoon_Sprite_Sleep2: -2075324660
       Raccoon_Sprite_Sleep3: 220617789
       Raccoon_Sprite_Sleep4: -1103187290
       Raccoon_Sprite_Sleep5: -1994198181
