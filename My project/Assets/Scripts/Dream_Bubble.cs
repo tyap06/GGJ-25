@@ -7,6 +7,7 @@ public class Dream_Bubble : MonoBehaviour
     public int Bubble_type;
     //public bool is_popped;
     public float speed;
+    public float bubble_timer;
 
     private Rigidbody2D myBody;
     private Transform myTransform;
@@ -48,22 +49,46 @@ public class Dream_Bubble : MonoBehaviour
         //myBody.linearVelocity = new Vector2(speed, myBody.linearVelocity.y);
         //is_popped(tool1);
         SelectObject();
+        destroySelectedObject();
+        StartCoroutine(BubbleFloatUp());
+        
 
 
        
+    }
+
+    // Make bubble float up wait few seconds then make it float up coroutine
+    IEnumerator BubbleFloatUp()
+    {
+        yield return new WaitForSeconds(bubble_timer);
+        // Move the object upward in world space 1 unit/second.
+        transform.Translate(Vector3.up * Time.deltaTime/2, Space.World);
     }
 
     private void SelectObject()
     {
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hitData = Physics2D.Raycast(new Vector2(worldPosition.x, worldPosition.y), Vector2.zero, 0);
-        if (hitData && Input.GetMouseButtonDown(0))
+        if (hitData && Input.GetMouseButtonDown(0) && hitData.transform.CompareTag("Bubble clone"))
         {
             selectedObject = hitData.transform.gameObject;
             Debug.Log("Hit Object 2D!");
             //Destroy(selectedObject);
             
         }
+    }
+
+    // destorys selected object otherwise do nothing
+    private void destroySelectedObject()
+    {
+        if (selectedObject != null)
+        {
+            Destroy(selectedObject);
+        }else
+        {
+            return;
+        }
+
     }
 
     // checks if bubble is popped on right button mouse click
