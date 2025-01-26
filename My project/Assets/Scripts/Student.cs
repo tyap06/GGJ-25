@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Student
+public class Student : MonoBehaviour
 {
     public int Spawn_bubble_type;
    
