@@ -838,6 +838,7 @@ GameObject:
   - component: {fileID: 831963491}
   - component: {fileID: 831963490}
   - component: {fileID: 831963492}
+  - component: {fileID: 831963493}
   m_Layer: 0
   m_Name: Bubble
   m_TagString: Bubble
@@ -889,7 +890,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1820922499, guid: b80334a35d060a243a9708bb24d4b368, type: 3}
+  m_Sprite: {fileID: -1219339154, guid: b80334a35d060a243a9708bb24d4b368, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -932,6 +933,28 @@ MonoBehaviour:
   bubble_timer: 0
   tool1: {fileID: 0}
   selectedObject: {fileID: 0}
+--- !u!95 &831963493
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831963489}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816924fb228293c479a5fc7b0b99e865, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1018662420 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8740673720303189225, guid: a123409015b1fbf4eb347ba22a017530, type: 3}

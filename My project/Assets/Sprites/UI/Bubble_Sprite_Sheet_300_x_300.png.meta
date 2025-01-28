@@ -123,15 +123,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bubble_Sprite_Sheet_300_x_300_0
+      name: Bubble_Sprite_Base1
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 302
-        height: 311
+        x: 0
+        y: 600
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -145,15 +145,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_Sprite_Sheet_300_x_300_1
+      name: Bubble_Sprite_Base2
       rect:
         serializedVersion: 2
-        x: 308
-        y: 0
-        width: 298
-        height: 311
+        x: 300
+        y: 600
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -167,15 +167,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_Sprite_Sheet_300_x_300_2
+      name: Bubble_Sprite_Base3
       rect:
         serializedVersion: 2
-        x: 606
-        y: 0
-        width: 299
-        height: 311
+        x: 600
+        y: 600
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -189,15 +189,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_Sprite_Sheet_300_x_300_3
+      name: Bubble_Sprite_Base4
       rect:
         serializedVersion: 2
-        x: 909
-        y: 0
-        width: 291
-        height: 311
+        x: 900
+        y: 600
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -211,15 +211,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_Sprite_Sheet_300_x_300_4
+      name: Bubble_Sprite_Tail1
       rect:
         serializedVersion: 2
         x: 0
-        y: 299
-        width: 308
-        height: 601
+        y: 300
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -233,15 +233,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_Sprite_Sheet_300_x_300_5
+      name: Bubble_Sprite_Tail2
       rect:
         serializedVersion: 2
-        x: 308
-        y: 303
-        width: 295
-        height: 597
+        x: 300
+        y: 300
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,15 +255,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_Sprite_Sheet_300_x_300_6
+      name: Bubble_Sprite_Tail3
       rect:
         serializedVersion: 2
-        x: 610
-        y: 299
-        width: 291
-        height: 601
+        x: 600
+        y: 300
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,15 +277,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_Sprite_Sheet_300_x_300_7
+      name: Bubble_Sprite_Tail4
       rect:
         serializedVersion: 2
-        x: 901
-        y: 295
-        width: 299
-        height: 605
+        x: 900
+        y: 301
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,6 +294,94 @@ TextureImporter:
       bones: []
       spriteID: 01db455d58c5b3a49bf5d75f1112aa41
       internalID: -1414006439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_Sprite1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e97e956a1b5a904481c3da87b482025
+      internalID: -1219339154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_Sprite2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f61924c20faa0458134f0e28a490a3
+      internalID: 1267453624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_Sprite3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318ac41d38ef08b499597f648f06a4d7
+      internalID: -1055701855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_Sprite4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96eb977d3c7a7e440a974403e7d64f53
+      internalID: -382607400
       vertices: []
       indices: 
       edges: []
@@ -312,14 +400,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bubble_Sprite_Sheet_300_x_300_0: 1820922499
-      Bubble_Sprite_Sheet_300_x_300_1: -1536928030
-      Bubble_Sprite_Sheet_300_x_300_2: -1526608510
-      Bubble_Sprite_Sheet_300_x_300_3: 1201797394
-      Bubble_Sprite_Sheet_300_x_300_4: 1081859798
-      Bubble_Sprite_Sheet_300_x_300_5: 974726279
-      Bubble_Sprite_Sheet_300_x_300_6: -1786496362
-      Bubble_Sprite_Sheet_300_x_300_7: -1414006439
+      Bubble_Sprite1: -1219339154
+      Bubble_Sprite2: 1267453624
+      Bubble_Sprite3: -1055701855
+      Bubble_Sprite4: -382607400
+      Bubble_Sprite_Base1: 1820922499
+      Bubble_Sprite_Base2: -1536928030
+      Bubble_Sprite_Base3: -1526608510
+      Bubble_Sprite_Base4: 1201797394
+      Bubble_Sprite_Tail1: 1081859798
+      Bubble_Sprite_Tail2: 974726279
+      Bubble_Sprite_Tail3: -1786496362
+      Bubble_Sprite_Tail4: -1414006439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
