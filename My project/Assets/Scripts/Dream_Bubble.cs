@@ -12,16 +12,12 @@ public class Dream_Bubble : MonoBehaviour
     private Rigidbody2D myBody;
     private Transform myTransform;
 
-    private string TOOL_TAG = "Tool";
+    //private string TOOL_TAG = "Tool";
 
     [SerializeField]
     private Tool tool1; // reference to tool
 
-    private Camera mainCamera;
-
     public GameObject selectedObject;
-
-    
 
 
     void Awake()
@@ -29,8 +25,6 @@ public class Dream_Bubble : MonoBehaviour
 
         myBody = gameObject.GetComponent<Rigidbody2D>();
         myTransform = gameObject.GetComponent<Transform>();
-        //speed = 1.0f;
-        mainCamera = Camera.main;
 
     }
 
@@ -41,20 +35,8 @@ public class Dream_Bubble : MonoBehaviour
 
     void Update()
     {
-        /*if(selectedObject == null)
-        {
-            return;
-        }
-        */
-        //myBody.linearVelocity = new Vector2(speed, myBody.linearVelocity.y);
-        //is_popped(tool1);
-        SelectObject();
-        destroySelectedObject();
-        StartCoroutine(BubbleFloatUp());
-        
-
-
-       
+        DestroyBubble();
+        StartCoroutine(BubbleFloatUp()); 
     }
 
     // Make bubble float up wait few seconds then make it float up coroutine
@@ -65,31 +47,24 @@ public class Dream_Bubble : MonoBehaviour
         transform.Translate(Vector3.up * Time.deltaTime/2, Space.World);
     }
 
-    private void SelectObject()
+
+    private void DestroyBubble()
     {
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        RaycastHit2D hitData = Physics2D.Raycast(new Vector2(worldPosition.x, worldPosition.y), Vector2.zero, 0);
-        if (hitData && Input.GetMouseButtonDown(0) && hitData.transform.CompareTag("Bubble clone"))
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hitInfo;
+
+        if (GetComponent<Collider>().Raycast(ray, out hitInfo, Mathf.Infinity))
         {
-            selectedObject = hitData.transform.gameObject;
-            Debug.Log("Hit Object 2D!");
-            //Destroy(selectedObject);
-            
+            if(Physics.Raycast(ray, out hitInfo))
+            {
+                if(Input.GetMouseButtonDown(0) && hitInfo.transform.CompareTag("Bubble clone"))
+                {
+                    Destroy(hitInfo.transform.gameObject);
+                }
+            }
         }
     }
 
-    // destorys selected object otherwise do nothing
-    private void destroySelectedObject()
-    {
-        if (selectedObject != null)
-        {
-            Destroy(selectedObject);
-        }else
-        {
-            return;
-        }
-
-    }
 
     // checks if bubble is popped on right button mouse click
     // => bubble is popped when the correct tool is used
@@ -110,27 +85,5 @@ public class Dream_Bubble : MonoBehaviour
         return false;
 
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag(TOOL_TAG))
-        {
-
-        }
-    }
-
-    
-
-
-
-
-   
-    /*public Dream_Bubble()
-    {
-        this.Bubble_type = 0;
-        this.is_popped = false;
-        this.speed = 2.0f;
-    }
-    */
 
 }
